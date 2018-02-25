@@ -6,6 +6,6 @@ describe "the cipher function" do
 	end
 
 	it "changes two letters" do
-		expect( encrypt("ab") ).to eq("bc")
+		expect( encrypt("ac") ).to eq("bd")
 	end
 end
