@@ -7,5 +7,17 @@ get '/' do
 end
 
 def encrypt(text)
-	(text.ord + 1).chr
+	text = text.split.map { |letter|  (letter.ord+1).chr}
+	text.join("")
 end
+
+
+=begin
+def encrypt(text)
+	text = text.split(//)
+	text.each do | letter |
+		letter = (letter.ord + 1).chr
+	end.join("")
+	text.inspect
+end
+=end
