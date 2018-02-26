@@ -7,6 +7,5 @@ get '/' do
 end
 
 def encrypt(text)
-	text = text.split.map { |letter|  (letter.ord+1).chr}
-	text.join("")
+	text.split("").map { |letter|  (letter =~ /[A-Za-z]/ ? letter.ord+1 : letter.ord).chr}.join
 end
