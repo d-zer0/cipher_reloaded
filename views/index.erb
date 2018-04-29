@@ -1,14 +1,14 @@
 <html>
-    <head>
-        <title>Ceaser Cipher Reloaded</title>
-    </head>
-    <body>
-        <h1>Ceaser Cipher</h1>
-        <p>Type some text:</p>
-        <p>
-        	<form>
-        		<input type='text' name='text' />
-				<input type='submit' value='Encrypt' />
-        	</form>
-    </body>
+<head>
+    <title>Ceaser Cipher Reloaded</title>
+</head>
+<body>
+    <h1>Ceaser Cipher</h1>
+    <form>
+        <input type='text' name='text'>
+        <input type='text' name='shift'>
+        <input type='submit' value='Encrypt'>
+    </form>
+    <p> <%= encrypted %> </p>
+</body>
 </html>
