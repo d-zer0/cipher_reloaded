@@ -1,2 +1,2 @@
-require './cipher_reloaded'
+require './app'
 run Sinatra::Application
